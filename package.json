@@ -1,0 +1,17 @@
+{
+  "name": "sitedoppler",
+  "version": "1.0.0",
+  "description": "cloning any website",
+  "main": "index.js",
+  "scripts": {
+    "installer": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "build": "concurrently \"cd server && npm run start\" \"cd frontend && npm build\"",
+    "dev": "concurrently \"cd server && npm start\" \"cd client && npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
